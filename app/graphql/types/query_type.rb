@@ -86,3 +86,60 @@ end
 #     ]
 #   }
 # }
+
+# and after adding votes and links to userType
+# and setting user has many votes and links...
+# This...
+# {
+#   allLinks {
+#     id
+#     postedBy {
+#       name
+#       votes {
+#         link {
+#           description
+#         }
+#       }
+#     }
+#   }
+# }
+# Returnes this...
+# {
+#   "data": {
+#     "allLinks": [
+#       {
+#         "id": "1",
+#         "postedBy": null
+#       },
+#       {
+#         "id": "2",
+#         "postedBy": null
+#       },
+#       {
+#         "id": "3",
+#         "postedBy": null
+#       },
+#       {
+#         "id": "4",
+#         "postedBy": null
+#       },
+#       {
+#         "id": "5",
+#         "postedBy": null
+#       },
+#       {
+#         "id": "6",
+#         "postedBy": {
+#           "name": "Adam Caron",
+#           "votes": [
+#             {
+#               "link": {
+#                 "description": "Best tools!"
+#               }
+#             }
+#           ]
+#         }
+#       }
+#     ]
+#   }
+# }
